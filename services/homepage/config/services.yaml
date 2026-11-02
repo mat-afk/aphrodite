@@ -3,3 +3,8 @@
         href: http://192.168.15.42:3000
         description: HomeLab dashboard
         icon: homepage.png
+
+    - Uptime Kuma:
+        href: http://192.168.15.42:3001
+        description: Service monitoring
+        icon: uptime-kuma.png
