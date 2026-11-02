@@ -14,3 +14,11 @@ services:
 
     environment:
       HOMEPAGE_ALLOWED_HOSTS: "*"
+
+    networks:
+      - default
+      - aphrodite
+
+networks:
+  aphrodite:
+    external: true

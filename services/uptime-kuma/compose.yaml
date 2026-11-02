@@ -7,3 +7,10 @@ services:
       - "3001:3001"
     volumes:
       - /home/arduino/aphrodite-data/uptime-kuma:/app/data
+    networks:
+      - default
+      - aphrodite
+
+networks:
+  aphrodite:
+    external: true
