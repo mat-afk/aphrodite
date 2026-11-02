@@ -1,0 +1,12 @@
+title: Aphrodite
+description: Home server
+theme: dark
+color: zinc
+
+headerStyle: clean
+hideVersion: true
+
+layout:
+  Infrastructure:
+    style: row
+    columns: 3
