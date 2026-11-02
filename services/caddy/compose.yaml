@@ -1,0 +1,17 @@
+services:
+  caddy:
+    image: caddy:2
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - /home/arduino/aphrodite-data/caddy/data:/data
+      - /home/arduino/aphrodite-data/caddy/config:/config
+    networks:
+      - aphrodite
+
+networks:
+  aphrodite:
+    external: true

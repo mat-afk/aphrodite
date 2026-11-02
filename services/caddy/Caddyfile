@@ -1,0 +1,11 @@
+http://homepage.home.arpa {
+    reverse_proxy homepage:3000
+}
+
+http://uptime.home.arpa {
+    reverse_proxy uptime-kuma:3001
+}
+
+http://adguard.home.arpa {
+    reverse_proxy adguard:80
+}
